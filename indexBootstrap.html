@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo Digital - Bootstrap</title>
+    <!-- Asegúrate de tener descargado Bootstrap en tu carpeta local -->
+    
+    <style>
+        .navbar-custom { background-color: #1a2e40; }
+        .btn-custom-orange { background-color: #ff7300; color: white; }
+        .btn-custom-orange:hover { background-color: #e06500; color: white; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-warning font-weight-bold" href="#">FERRETERÍA LA MIXTECA</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#">Catálogo</a>
+                <a class="nav-link" href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="text-center my-5">
+        <h1 class="display-5 fw-bold">Catálogo Digital de Maquinaria y Suministros</h1>
+        <p class="text-muted">Módulo de Prácticas de Desarrollo Web - Inferencia Acatlán de Osorio</p>
+    </header>
+
+    <!-- Grid de Productos -->
+    <main class="container mb-5">
+        <div class="row g-4">
+            
+            <!-- Tarjeta 1 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Rotomartillo Profesional 1/2"</h5>
+                        <p class="card-text text-stretch flex-grow-1">Motor de alto rendimiento ideal para perforaciones exigentes en concreto, madera y metal. Cuenta con mango ergonómico para mayor control y velocidad variable.</p>
+                        <p class="text-danger fw-bold small">Disponibilidad Inmediata</p>
+                        <button class="btn btn-custom-orange w-100 mt-auto">Ver Más Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Juego de Llaves Combinadas (12 piezas)</h5>
+                        <p class="card-text flex-grow-1">Fabricadas en acero al cromo vanadio de alta resistencia para evitar el desgaste. Estuche organizador incluido con marcas de identificación de medidas de fácil lectura.</p>
+                        <p class="text-secondary fw-bold small">Precio Especial Contratista</p>
+                        <button class="btn btn-dark w-100 mt-auto">Agregar a Cotización</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Kit de Multímetro Digital y Pinzas</h5>
+                        <p class="card-text flex-grow-1">Paquete completo para electricistas y mantenimiento residencial. Incluye pantalla digital con retroiluminación y pinzas con aislamiento certificado de seguridad.</p>
+                        <p class="text-muted fw-bold small">Últimas piezas en sucursal</p>
+                        <button class="btn btn-outline-secondary w-100 mt-auto" disabled>Próximamente disponible</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

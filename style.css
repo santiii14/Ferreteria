@@ -1,0 +1,98 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f6;
+    color: #333;
+}
+
+/* Header y Navegación */
+.main-header {
+    background-color: #1a2e40;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff7300;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.main-nav a:hover {
+    color: #ff7300;
+}
+
+/* Contenedor Principal (Layout Responsivo) */
+.content-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Secciones Internas */
+.articles-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-block {
+    margin-bottom: 25px;
+}
+
+.info-block h2 {
+    color: #1a2e40;
+    border-left: 4px solid #ff7300;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-services {
+    background: #eef2f5;
+    padding: 20px;
+    border-radius: 5px;
+    border-top: 4px solid #1a2e40;
+}
+
+.sidebar-services h3 {
+    margin-bottom: 15px;
+    color: #1a2e40;
+}
+
+.sidebar-services ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* --- Media Queries para Pantallas Grandes (Desktop) --- */
+@media (min-width: 768px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content-container {
+        grid-template-columns: 3fr 1fr;
+    }
+}
